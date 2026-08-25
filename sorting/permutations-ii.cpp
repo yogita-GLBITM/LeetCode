@@ -11,7 +11,7 @@ public:
             result.push_back(nums);
             return;
         }
-        unordered_set<int>seen; // <-- NEW: The "Bouncer" for this specific position
+        unordered_set<int>seen; //{} // <-- NEW: The "Bouncer" for this specific position
         for (int i = start; i < nums.size(); i++) {
             // NEW: If we already tried this exact number in the 'start' position, skip it!
             if (seen.count(nums[i])) { 
