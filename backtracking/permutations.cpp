@@ -8,7 +8,7 @@ public:
     private:
     void backtrack(vector<int>&nums,int start,vector<vector<int>>&result){ //"This is my helper. It needs to know three things: the current state of the numbers, which spot (start) it is currently trying to fill, and the notebook to write in."
 
-C++
+
         if(start==nums.size()){
             result.push_back(nums);
             result; //base case
