@@ -22,6 +22,7 @@ list1=list1->next;
                 tail->next=list2;
                 list2=list2->next;
             }
+              return dummy->next;
         }
-    }
+    
 };
