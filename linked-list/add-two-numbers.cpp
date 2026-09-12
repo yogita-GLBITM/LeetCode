@@ -28,6 +28,9 @@ public:
             temp->next=new ListNode(sum%10);
             temp=temp->next;
            }
+           if(carry != 0) {
+            temp->next = new ListNode(carry);
+        }
            return head->next;
     }
 };
